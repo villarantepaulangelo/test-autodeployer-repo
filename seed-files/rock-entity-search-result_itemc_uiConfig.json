@@ -1,0 +1,93 @@
+{
+  "metaInfo": {
+    "dataIndex": "config",
+    "collectionName": "configObjects",
+    "responseObjectName": "response"
+  },
+  "configObjects": [
+    {
+      "id": "rock-entity-search-result_itemc_uiConfig",
+      "name": "rock-entity-search-result_itemc",
+      "type": "uiConfig",
+      "properties": {
+        "createdService": "configurationManageService",
+        "createdBy": "dannielle.renzosaycon@avensia.com_user",
+        "modifiedService": "configurationManageService",
+        "modifiedBy": "dannielle.renzosaycon@avensia.com_user",
+        "createdDate": "2023-03-06T23:51:17.224-0600",
+        "modifiedDate": "2023-03-06T23:51:17.224-0600"
+      },
+      "data": {
+        "contexts": [
+          {
+            "context": {
+              "app": "_DEFAULT",
+              "component": "rock-entity-search-result",
+              "domain": "thing",
+              "entityType": "itemc",
+              "relationship": "_DEFAULT",
+              "role": "_DEFAULT",
+              "tenant": "_DEFAULT",
+              "user": "_DEFAULT"
+            },
+            "jsonData": {
+              "config": {
+                "governAttributesCriterion": {
+                  "include": [
+                    "packagecategory"
+                  ],
+                  "visible": true
+                },
+                "toolbarConfig": {
+                  "buttonItems": {
+                    "basic": {
+                      "buttons": {
+                        "delete": {
+                          "visible": true,
+                          "name": "bulkdelete"
+                        }
+                      }
+                    }
+                  }
+                },
+                "gridConfig": {
+                  "itemConfig": {
+                    "fields": {
+                      "externalName": {
+                        "visible": false
+                      },
+                      "name": {
+                        "visible": false
+                      },
+                      "id": {
+                        "visible": true,
+                        "linkTemplate": "entity-manage?id={id}&type={type}"
+                      },
+                      "packagecategory": {
+                        "filterable": false,
+                        "visible": true,
+                        "isMetaDataColumn": false,
+                        "editable": true,
+                        "displaySequence": 20,
+                        "name": "packagecategory",
+                        "sortable": true
+                      }
+                    }
+                  },
+                  "viewConfig": {
+                    "tile": {
+                      "settings": {
+                        "titlePattern": "",
+                        "subTitlePattern": ""
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
