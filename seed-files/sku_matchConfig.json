@@ -1,0 +1,78 @@
+{
+  "metaInfo": {
+    "dataIndex": "config",
+    "collectionName": "configObjects",
+    "responseObjectName": "response"
+  },
+  "configObjects": [
+    {
+      "id": "sku_matchConfig",
+      "name": "sku",
+      "type": "matchConfig",
+      "properties": {
+        "createdService": "configurationManageService"
+      },
+      "data": {
+        "jsonData": {
+          "matchRules": [
+            {
+              "matchType": "deterministic",
+              "searchQuery": {
+                "query": {
+                  "filters": {
+                    "attributesCriterion": [
+                      {
+                        "mdmname": {
+                          "exact": "{{mdmname}}",
+                          "type": "_STRING"
+                        }
+                      }
+                    ],
+                    "typesCriterion": [
+                      "sku"
+                    ]
+                  },
+                  "valueContexts": [
+                    {
+                      "source": "internal",
+                      "locale": "en-US"
+                    }
+                  ]
+                }
+              },
+              "matchSequence": 2
+            },
+            {
+              "matchType": "deterministic",
+              "searchQuery": {
+                "query": {
+                  "filters": {
+                    "attributesCriterion": [
+                      {
+                        "mdmid": {
+                          "exact": "{{mdmid}}",
+                          "type": "_STRING"
+                        }
+                      }
+                    ],
+                    "typesCriterion": [
+                      "sku"
+                    ]
+                  },
+                  "valueContexts": [
+                    {
+                      "source": "internal",
+                      "locale": "en-US"
+                    }
+                  ]
+                }
+              },
+              "matchSequence": 1
+            }
+          ],
+          "type": "config"
+        }
+      }
+    }
+  ]
+}

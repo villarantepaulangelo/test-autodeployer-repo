@@ -1,0 +1,98 @@
+{
+    "metaInfo": {
+        "dataIndex": "entityModel",
+        "collectionName": "entityModels",
+        "responseObjectName": "response"
+    },
+    "entityModels": [
+        {
+            "id": "rmbaseproduct_rmskutobaseproduct_rmsku_graphProcessModel",
+            "name": "rmbaseproduct_rmskutobaseproduct_rmsku",
+            "type": "graphProcessModel",
+            "domain": "generic",
+            "properties": {
+                "defaultValueSource": "internal",
+                "defaultValueLocale": "en-US",
+                "graphProcessPath": "rmbaseproduct_rmskutobaseproduct_rmsku",
+                "matchRulesOperator": "or",
+                "includeAllAttributes": true,
+                "matchRules": [
+                    {
+                        "seq": 1,
+                        "matchType": "whereUsedRelationshipBased",
+                        "relationshipName": "rmskutobaseproduct",
+                        "noMatchResult": [
+                            {
+                                "actions": [
+                                    {
+                                        "actionName": "DoNothing"
+                                    }
+                                ]
+                            }
+                        ],
+                        "singleMatchResult": [
+                            {
+                                "actions": [
+                                    {
+                                        "actionName": "CopyData"
+                                    }
+                                ]
+                            }
+                        ],
+                        "multiMatchResult": [
+                            {
+                                "actions": [
+                                    {
+                                        "actionName": "CopyData"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "createdService": "entityManageModelService",
+                "modifiedService": "entityManageModelService"
+            },
+            "data": {
+                "attributes": {
+                    "rmthgsbu": {
+                        "properties": {
+                            "strategy": "copy",
+                            "strategyMode": "replace"
+                        }
+                    },
+                    "rmthgmasterdescription": {
+                        "properties": {
+                            "strategy": "copy",
+                            "strategyMode": "replace"
+                        }
+                    },
+                    "rmthggpp": {
+                        "properties": {
+                            "strategy": "copy",
+                            "strategyMode": "replace"
+                        }
+                    },
+                    "rmthgproductname": {
+                        "properties": {
+                            "strategy": "copy",
+                            "strategyMode": "replace"
+                        }
+                    },
+                    "rmthgcountry": {
+                        "properties": {
+                            "strategy": "copy",
+                            "strategyMode": "replace"
+                        }
+                    },
+                    "rmthgchannel": {
+                        "properties": {
+                            "strategy": "copy",
+                            "strategyMode": "replace"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}
