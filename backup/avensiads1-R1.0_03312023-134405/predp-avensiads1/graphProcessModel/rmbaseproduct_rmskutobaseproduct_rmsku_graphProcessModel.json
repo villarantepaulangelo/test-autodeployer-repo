@@ -1,0 +1,36 @@
+{
+  "metaInfo": {
+    "dataIndex": "entityModel",
+    "collectionName": "entityModels",
+    "responseObjectName": "response"
+  },
+  "entityModels": [
+    {
+      "id": "drsku_drskutobase_drbaseproduct_del_graphProcessModel",
+      "name": "drsku_drskutobase_drbaseproduct_del",
+      "type": "graphProcessModel",
+      "domain": "generic",
+      "source": null,
+      "properties": {
+        "firstName": null,
+        "lastName": null,
+        "email": null,
+        "login": null,
+        "defaultRole": null,
+        "roles": null,
+        "ownershipData": null,
+        "ownershipEditData": null,
+        "interactionLocale": null,
+        "auth0Id": null,
+        "createdService": "entityManageModelService",
+        "createdBy": "dannielle.renzosaycon@avensia.com_user",
+        "modifiedService": "entityManageModelService",
+        "modifiedBy": "dannielle.renzosaycon@avensia.com_user",
+        "createdDate": "2023-01-06T15:05:08.007+08:00",
+        "modifiedDate": "2023-01-06T15:05:08.007+08:00",
+        "workAutomationId": null
+      },
+      "data": null
+    }
+  ]
+}
